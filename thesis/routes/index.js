@@ -3,13 +3,13 @@
  * GET home page.
  */
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+exports.index = function(req, res) {
+	res.render('index', { title: 'Home' });
 };
 
-exports.helloworld = function(req, res){
-  res.render('helloworld', { title: 'Hello, World!' });
-};
+exports.about = function(req, res) {
+	res.render('about', { title: 'About Greg\'s True Value' })
+}
 
 exports.userlist = function(db) {
     return function(req, res) {

@@ -1,7 +1,24 @@
 doctype html
 html
   head
-    title= title
+    title Greg's True Value
+    script(type='text/javascript', src='/javascripts/javascript.js')
     link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src="http://code.jquery.com/jquery-latest.min.js")
   body
-    block content
+    #header.centered
+      #welcome.inline
+        img(src="/images/truevaluelogo.gif")#tvlogo
+      #menu.inline
+        table#menutable
+          tr
+            td.inline.menuitem 
+              a(src="/") Home
+            td.inline.menuitem
+              a Contact Us
+            td.inline.menuitem
+              a(src="about") About
+    #content.centered
+      block content
+
+    #footer.centered
