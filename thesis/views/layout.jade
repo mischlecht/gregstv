@@ -5,24 +5,30 @@ html
     script(type='text/javascript', src='./javascripts/javascript.js')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src="http://code.jquery.com/jquery-latest.min.js")
+
   body
-    #header.centered
-      #welcome.inline
-        img(src="/images/truevaluelogo.gif")#tvlogo
-      #menu.inline
-        table#menutable
+    #header
+      #greeting
+        h3 Welcome to the official site of Greg's True Value
+      #menu.inline.centered
+        table#menutable.centered
           tr
             td.inline.menuitem
               a(href="/") Home
+            td.inline.menuitem |
             td.inline.menuitem
               a(href= "/about") About
-            td.inline.menuitem
-              a(href="/contactus") Contact Us
+            td.inline.menuitem |
             td.inline.menuitem
               a(href= "/rewards") Rewards
+            td.inline.menuitem |
             td.inline.menuitem
               a(href= "/localad") Local Ad
+            td.inline.menuitem |
+            td.inline.menuitem
+              a(href="/rental") Just Ask Rental
     #content.centered
       block content
 
     #footer.centered
+      p This is my footer.

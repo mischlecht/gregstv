@@ -1,5 +1,9 @@
 extends layout
 
+head
+  link(rel='stylesheet', href='/stylesheets/home.css')
+
 block content
-  h1= title
-  p Welcome to #{title}
+  #greeting
+    h1= title
+    p Welcome to #{title}

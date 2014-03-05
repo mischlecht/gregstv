@@ -38,6 +38,7 @@ app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/rewards', routes.rewards);
 app.get('/localad', routes.localad);
+app.get('/rental', routes.rental);
 /*app.get('/userlist', routes.userlist(db));
 app.get('/newuser', routes.newuser);
 app.post('/adduser', routes.adduser(db));*/

@@ -12,13 +12,17 @@ function about(req, res) {
 };
 
 function rewards(req, res) {
-    window.open("https://rewards.truevalue.com/");
+    var win = window.open("https://rewards.truevalue.com/", '_blank');
+    win.focus();
 };
 
 function localad(req, res) {
     res.render('localad', { title: 'Local Ad' });
 };
 
+function rental(req, res) {
+    res.render('rental', { title: 'Just Ask Rental' });
+};
 
 
 
@@ -26,6 +30,7 @@ exports.index = index
 exports.about = about
 exports.rewards = rewards
 exports.localad = localad
+exports.rental = rental
 
 
 
