@@ -1,24 +1,8 @@
 /*****************************************************************/
-/*                        About Page CSS                         */
+/*                        Rental Page CSS                        */
 
 #pageheader {
 	text-align: center;
-}
-
-#storehistory {
-	padding-left: 20px;
-}
-
-#mapcanvas {
-	border-radius: 5px;
-	border: 1px solid black;
-	width: 80%;
-	height: 500px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-    margin-left: auto;
-	margin-right: auto;
-	background-color: #CCC;	
 }
 
 /*****************************************************************/

@@ -36,7 +36,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/about', routes.about);
-app.get('/localad', routes.localad);
+app.get('/monthlyad', routes.monthlyad);
 app.get('/rental', routes.rental);
 app.get('/login', routes.login);
 app.get('/register', routes.register);

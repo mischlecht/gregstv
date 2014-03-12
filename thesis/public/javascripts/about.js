@@ -1,13 +1,29 @@
 
 // Initializes the google maps function
 function initialize() {
-    var map_canvas = document.getElementById('map_canvas');
-    var map_options = {
-    center: new google.maps.LatLng(44.5403, -78.5463),
-    zoom: 8,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
-	}
-    var map = new google.maps.Map(map_canvas, map_options)
+  	var myLatlng = new google.maps.LatLng(42.959892, -87.872231);
+
+  	var mapOptions = {
+    	zoom: 15,
+    	center: myLatlng,
+    	mapTypeId: google.maps.MapTypeId.ROADMAP
+  	};
+
+  	var map = new google.maps.Map(document.getElementById('mapcanvas'), mapOptions);
+
+	var marker = new google.maps.Marker({
+    	position: myLatlng,
+    	map: map,
+    	title: 'Hello World!'
+	});
 }
 
-google.maps.event.addDomListener(window, 'load', initialize);
+function loadScript() {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
+      'callback=initialize';
+  document.body.appendChild(script);
+}
+
+window.onload = loadScript;;

@@ -26,7 +26,9 @@ body {
 
 #tvlogo {
 	vertical-align: middle;
-	border-radius: 5px;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 180px;
 }
 
 #welcome {
@@ -61,8 +63,6 @@ body {
 	clear: both;
 }
 
-
-
 a:link    {
   /* Applies to all unvisited links */
   text-decoration: none;
@@ -96,7 +96,7 @@ a:hover   {
 
 .menuitem {
 	color: black;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: bold;
 	margin: 10px;
 }
@@ -108,13 +108,19 @@ a:hover   {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 5px;
+	padding-bottom: 50px;
 	width: 1000px;
 	max-width: 1400px;
-	height: 1000px;
+	height: auto;
+	min-height: 700px;
 	border: 0px solid black;
 	background: white;
 	border-radius: 15px;
 	box-shadow: 0px 0px 6px #242424;
+}
+
+#gregimage {
+	text-align: center;
 }
 
 #gregexpert {

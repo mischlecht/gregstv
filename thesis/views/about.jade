@@ -1,15 +1,13 @@
 extends layout
 
 block additionalfiles
-  script(src='https://maps.googleapis.com/maps/api/js?sensor=false')
   link(rel='stylesheet', href='/stylesheets/about.css')
   script(src='/javascripts/about.js')
     
 
 block content
   #pageheader
-    h1= title
-    p Welcome to #{title}
+    h1 Our Story
   #storehistory
     p The store history will be told here.
-  #mapcanvas
+  #mapcanvas.centered

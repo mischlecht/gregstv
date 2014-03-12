@@ -4,59 +4,42 @@
  */
 
 function index(req, res) {
-	res.render('index', { title: 'Home' });
+	res.render('index');
 };
 
 function about(req, res) {
-	res.render('about', { title: 'Our Story' });
+	res.render('about');
 };
 
-function localad(req, res) {
-    res.render('localad', { title: 'Local Ad' });
+function monthlyad(req, res) {
+    res.render('monthlyad');
 };
 
 function rental(req, res) {
-    res.render('rental', { title: 'Just Ask Rental' });
+    res.render('rental');
 };
 
 function login(req, res) {
     // Perhaps substitute for a modal popup
-    res.render('login', { title: "Login" });
+    res.render('login');
 }
 
 function register(req, res) {
-    res.render('register', { title: "Register" });
+    res.render('register');
 }
 
 function userinfo(req, res) {
-    res.render('userinfo', { title: "User Info" });
+    res.render('userinfo');
 }
 
 
 exports.index = index
 exports.about = about
-exports.localad = localad
+exports.monthlyad = monthlyad
 exports.rental = rental
 exports.login = login
 exports.register  = register
 exports.userinfo = userinfo
-
-
-// Various other functions
-
-
-
-/*function initialize() {
-    var mapcanvas = document.getElementById('mapcanvas');
-    var mapOptions = {
-      center: new google.maps.LatLng(44.5403, -78.5463),
-      zoom: 8,
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    }
-    var map = new google.maps.Map(mapcanvas, mapOptions);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
 
 // Old Code
 /*
