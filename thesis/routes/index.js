@@ -8,12 +8,7 @@ function index(req, res) {
 };
 
 function about(req, res) {
-	res.render('about', { title: 'About Greg\'s True Value' });
-};
-
-function rewards(req, res) {
-    var win = window.open("https://rewards.truevalue.com/", '_blank');
-    win.focus();
+	res.render('about', { title: 'Our Story' });
 };
 
 function localad(req, res) {
@@ -24,15 +19,44 @@ function rental(req, res) {
     res.render('rental', { title: 'Just Ask Rental' });
 };
 
+function login(req, res) {
+    // Perhaps substitute for a modal popup
+    res.render('login', { title: "Login" });
+}
+
+function register(req, res) {
+    res.render('register', { title: "Register" });
+}
+
+function userinfo(req, res) {
+    res.render('userinfo', { title: "User Info" });
+}
 
 
 exports.index = index
 exports.about = about
-exports.rewards = rewards
 exports.localad = localad
 exports.rental = rental
+exports.login = login
+exports.register  = register
+exports.userinfo = userinfo
 
 
+// Various other functions
+
+
+
+/*function initialize() {
+    var mapcanvas = document.getElementById('mapcanvas');
+    var mapOptions = {
+      center: new google.maps.LatLng(44.5403, -78.5463),
+      zoom: 8,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(mapcanvas, mapOptions);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
 // Old Code
 /*

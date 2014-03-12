@@ -5,12 +5,21 @@ html
     script(type='text/javascript', src='./javascripts/javascript.js')
     link(rel='stylesheet', href='/stylesheets/style.css')
     script(src="http://code.jquery.com/jquery-latest.min.js")
+    block additionalfiles
 
   body
     #header
-      #greeting
-        h3 Welcome to the official site of Greg's True Value
-      #menu.inline.centered
+      #topbar
+        #greeting.inline
+          h3 Welcome to the official site of Greg's True Value
+        #login.inline
+          ul#loginmenu
+            li.inline 
+              a(href="/login") Login 
+            li.inline | 
+            li.inline
+              a(href="/register") Register 
+      #menu.centered
         table#menutable.centered
           tr
             td.inline.menuitem
@@ -20,15 +29,45 @@ html
               a(href= "/about") About
             td.inline.menuitem |
             td.inline.menuitem
-              a(href= "/rewards") Rewards
-            td.inline.menuitem |
-            td.inline.menuitem
               a(href= "/localad") Local Ad
             td.inline.menuitem |
             td.inline.menuitem
               a(href="/rental") Just Ask Rental
+            td.inline.menuitem |
+            td.inline.menuitem
+              a(href= "https://rewards.truevalue.com/" target="_blank") TV Rewards
     #content.centered
       block content
 
-    #footer.centered
-      p This is my footer.
+   
+    img(src='/images/gregexpert.jpg')#gregexpert.centered
+
+    #footer
+      #footerinfo.centered
+        a(href="https://maps.google.com/maps?q=3050+East+Layton+Avenue+St.+Francis,+WI+53235+(414)+483-5550&ie=UTF-8&ei=L50gU4XhGqewyQGVkYHoCQ&ved=0CAkQ_AUoAQ" target="_blank")#gregsgooglemaps
+          ul.inline.footerlist#storeinfo
+            li Greg's True Value
+            li 3050 E Layton Avenue
+            li St. Francis, WI 53235
+            li (414) 483-5550
+        ul#footerspacer.inline
+
+        ul.inline.footerlist#storehours
+          li
+            b Store Hours
+          li
+            b M-F: 
+            |  7:00am - 8:00pm
+          li
+            b Sat: 
+            |  7:00am - 7:00pm
+          li
+            b Sun: 
+            |  9:00am - 5:00pm
+        ul.inline.footerlist#storelinks
+          li
+            a(href="https://www.facebook.com/GregsTrueValue" target="_blank")
+              img(src='/images/FacebookIcon.gif').logolink
+          li
+            a(href="https://twitter.com/GregsTrueValue" target="_blank")
+              img(src='/images/TwitterIcon.gif').logolink

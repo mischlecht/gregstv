@@ -1,0 +1,28 @@
+/*****************************************************************/
+/*                        About Page CSS                         */
+
+#pageheader {
+	text-align: center;
+}
+
+#storehistory {
+	padding-left: 20px;
+}
+
+#mapcanvas {
+	border: 1px solid black;
+	width: 500px;
+    height: 400px;
+    background-color: #CCC;	
+}
+
+/*****************************************************************/
+/*                     Helper Format Classes                     */
+.inline {
+	display: inline-block;
+}
+
+.centered {
+	margin-left: auto;
+	margin-right: auto;
+}

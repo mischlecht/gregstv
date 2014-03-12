@@ -1,9 +1,9 @@
 extends layout
 
-block additionalfiles
+head
   link(rel='stylesheet', href='/stylesheets/home.css')
 
 block content
-  #pageheader.centered
+  #pageheader
     h1= title
     p Welcome to #{title}

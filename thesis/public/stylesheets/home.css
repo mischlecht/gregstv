@@ -1,5 +1,8 @@
-/* CSS page for Home Page */
+/*****************************************************************/
+/*                         Home Page CSS                         */
 
-#greeting {
-	border: 2px solid black;
+#pageheader {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
 }
