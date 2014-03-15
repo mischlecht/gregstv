@@ -24,29 +24,47 @@
 	color: #DE0000;
 }
 
+#info {
+	width: 700px;
+	float: left;
+}
+
 #pictureslider {
 	width: 600px;
 	height: 350px;
 	border: 3px solid #524E4E;
 	background-color: #877E7E;
 	border-radius: 10px;
-	margin-top: 15px;
-	margin-left: 50px;
-	text-align: center;
+	position: relative;
+	overflow: hidden;
+}
+
+.imageslider {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+  	z-index: 0;
+}
+
+.active {
+	display: inline-block;
+}
+
+.inactive {
+	display: none;
 }
 
 #addiv {
 	width: auto;
 	height: auto;
 	border-radius: 5px;
-	margin-top: 15px;
 	margin-right: 25px;
 	float: right;
-	position: relative;
+	
 }
 
 #picturemenu {
-	text-align: center;
+	margin-top: 10px;
 }
 
 .pictureoption {
@@ -55,6 +73,24 @@
 	background-color: #DE0000;
 	border-radius: 15px;
 	margin-right: 5px;
+}
+
+.pictureoption:hover {
+	cursor: pointer;
+}
+
+.inner {
+	width: 24px;
+	height: 24px;
+	background-color: #F1EBD6;
+	border-radius: 13px;
+	display: inline-block;
+	margin: 3px 3px 3px 3px;
+}
+
+.inner:hover {
+	background-color: #DE0000;
+	cursor: pointer;
 }
 
 #message {

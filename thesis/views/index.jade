@@ -1,25 +1,45 @@
 extends layout
 
 block additionalfiles
+  script(type='text/javascript', src='./javascripts/home.js')
   link(rel='stylesheet', href='/stylesheets/home.css')
 
 block content
   #pageheader.centered
     h4#topgreeting.greeting Welcome to the official site of 
     h1#bottomgreeting.greeting Greg's True Value
-  #pictureslider.inline
-    h3 pictures
+    
+  #info.inline
+    #pictureslider.centered
+      img(src="/images/pictureslider/GTV1.jpg").imageslider
+      img(src="/images/pictureslider/GTV2.jpg").imageslider
+      img(src="/images/pictureslider/GTV3.jpg").imageslider
+      img(src="/images/pictureslider/GTV4.jpg").imageslider
+      img(src="/images/pictureslider/GTV5.jpg").imageslider
+      img(src="/images/pictureslider/GTV6.jpg").imageslider
+      img(src="/images/pictureslider/GTV7.jpg").imageslider
+      img(src="/images/pictureslider/GTV8.jpg").imageslider
+      img(src="/images/pictureslider/GTV9.jpg").imageslider
+      img(src="/images/pictureslider/GTV10.jpg").imageslider
+  
+    #picturemenu(style="display:none")
+      table.centered
+        tr
+          td.inline
+            #option0.pictureoption(onclick="rotatePics(0)")
+              #option0inner.inner
+          td.inline
+            #option1.pictureoption(onclick="rotatePics(1)")
+              #option1inner.inner
+          td.inline
+            #option2.pictureoption(onclick="rotatePics(2)")
+              #option2inner.inner
+          td.inline
+            #option3.pictureoption(onclick="rotatePics(3)")
+              #option3inner.inner
+    #message
+      h2.centered Thank you for visiting Greg's True Value of St. Francis!
+      p   In this paragraph, we will write the store's personal statement.  I think this will be a great thing to have for our customers to really see our true caring side that makes us so successful.
+
   #addiv.inline
     img(src="./images/BOM_March.jpg")
-  ul#picturemenu
-    li.inline
-      #option1.pictureoption
-    li.inline
-      #option2.pictureoption
-    li.inline
-      #option3.pictureoption
-  #message
-    h2 Thank you for visiting Hahn Ace Hardware of
-    p Hartford and Delafield!
-    At Hahn we strive everyday to provide a welcome atmosphere that is clean and organized. Our staff is friendly and ready to assist you with all your home improvement and maintenance needs.
-    Whether you tackle projects weekly, monthly or yearly, Hahn is here to help make your life easier. From under the sink to your yard & garden, you can depend on us for tips and advice to complete your projects right the first time. We hope you have a great shopping experience!
