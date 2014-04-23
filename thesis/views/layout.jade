@@ -9,33 +9,25 @@ html
 
   body
     #header
-      #topbar
-        #greeting.inline
-          img(src='/images/truevaluetext.gif')#tvlogo
-        #login.inline
-          ul#loginmenu
-            li.inline#loginbutton
-              a(href="/login") Login
-            li.inline | 
-            li.inline
-              a(href="/register") Register 
-        #menu.centered
-          table#menutable.centered
-            tr
-              td.inline.menuitem
-                a(href="/") Home
-              td.inline.menuitem |
-              td.inline.menuitem
-                a(href= "/about") About
-              td.inline.menuitem |
-              td.inline.menuitem
-                a(href= "/monthlyad") Monthly Ad
-              td.inline.menuitem |
-              td.inline.menuitem
-               a(href="/rental") Just Ask Rental
-              td.inline.menuitem |
-              td.inline.menuitem
-                a(href= "https://rewards.truevalue.com/" target="_blank") TV Rewards
+      #logo.centered  
+        a(href="/")
+          img(src='/images/truevaluetext.gif')#tvlogo.centered
+      #menu.centered
+        ul
+          a(href="/")
+            li.inline.menuitem Home
+          a(href= "/about")
+            li.inline.menuitem About
+          a(href= "/monthlyad")
+            li.inline.menuitem Our Ad
+          a(href="/rental")
+            li.inline.menuitem Rental
+          a(href="/askus")
+            li.inline.menuitem Ask
+          a(href= "https://rewards.truevalue.com/" target="_blank")
+            li.inline.menuitem Rewards
+
+
     #content.centered
       block content
 
@@ -72,3 +64,5 @@ html
           li
             a(href="https://twitter.com/GregsTrueValue" target="_blank")
               img(src='/images/TwitterIcon.gif').logolink
+
+

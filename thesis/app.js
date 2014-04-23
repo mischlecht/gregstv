@@ -38,9 +38,7 @@ app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/monthlyad', routes.monthlyad);
 app.get('/rental', routes.rental);
-app.get('/login', routes.login);
-app.get('/register', routes.register);
-app.get('/userinfo', routes.userinfo);
+app.get('/askus', routes.askus);
 /*app.get('/userlist', routes.userlist(db));
 app.get('/newuser', routes.newuser);
 app.post('/adduser', routes.adduser(db));*/

@@ -1,0 +1,17 @@
+extends layout
+
+block additionalfiles
+  script(type='text/javascript', src='./javascripts/askus.js')
+  link(rel='stylesheet', href='/stylesheets/askus.css')
+
+block content
+  #pageheader
+    h1#greeting Ask Us a Question!
+
+  #divider
+
+  form#questionform
+    div#lefthalf
+      Name: input(type="text")#nametextbox
+    div#righthalf
+

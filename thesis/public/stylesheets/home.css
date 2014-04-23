@@ -13,18 +13,25 @@
 }
 
 #topgreeting {
-	margin-bottom: -25px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 20px;
+	text-shadow: 1px 0px 0px #242424;
 }
 
 #bottomgreeting {
-
+	margin-top: 0px;
+	margin-bottom: 20px;
+	font-size: 45px;
+	text-shadow: 2px 2px 2px #242424;
 }
 
 .greeting {
-	color: #DE0000;
+	color: #B80000;
 }
 
 #info {
+	height: auto;
 	width: 700px;
 	float: left;
 }
@@ -57,10 +64,12 @@
 #addiv {
 	width: auto;
 	height: auto;
-	border-radius: 5px;
-	margin-right: 25px;
+	margin-right: 10px;
 	float: right;
-	
+}
+
+#addiv img {
+	border-radius: 5px;
 }
 
 #picturemenu {
@@ -96,4 +105,9 @@
 #message {
 	width: auto;
 	padding: 15px 15px 15px 15px;
+	border: 0px solid black;
+}
+
+#message h2 {
+	text-align: center;
 }

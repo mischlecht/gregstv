@@ -19,27 +19,16 @@ function rental(req, res) {
     res.render('rental');
 };
 
-function login(req, res) {
-    // Perhaps substitute for a modal popup
-    res.render('login');
-}
-
-function register(req, res) {
-    res.render('register');
-}
-
-function userinfo(req, res) {
-    res.render('userinfo');
-}
+function askus(req, res) {
+    res.render('askus');
+};
 
 
 exports.index = index
 exports.about = about
 exports.monthlyad = monthlyad
 exports.rental = rental
-exports.login = login
-exports.register  = register
-exports.userinfo = userinfo
+exports.askus = askus
 
 // Old Code
 /*

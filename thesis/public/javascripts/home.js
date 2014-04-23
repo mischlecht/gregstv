@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
   	rotatePics(9);
-}); 
+});
 
 function rotatePics(currentPhoto){
 	var numberOfPhotos = $('.imageslider').length;
